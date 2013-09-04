@@ -1,0 +1,255 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95C3EFCA17B11DDC00B807F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C3EFC917B11DDC00B807F9 /* Foundation.framework */; };
+		95C3EFCD17B11DDC00B807F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3EFCC17B11DDC00B807F9 /* main.m */; };
+		95C3EFD117B11DDC00B807F9 /* BallProblem.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95C3EFD017B11DDC00B807F9 /* BallProblem.1 */; };
+		95C3EFD917B11EF700B807F9 /* Bag.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C3EFD817B11EF700B807F9 /* Bag.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95C3EFC417B11DDC00B807F9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				95C3EFD117B11DDC00B807F9 /* BallProblem.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		95C3EFC617B11DDC00B807F9 /* BallProblem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BallProblem; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C3EFC917B11DDC00B807F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95C3EFCC17B11DDC00B807F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95C3EFCF17B11DDC00B807F9 /* BallProblem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BallProblem-Prefix.pch"; sourceTree = "<group>"; };
+		95C3EFD017B11DDC00B807F9 /* BallProblem.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BallProblem.1; sourceTree = "<group>"; };
+		95C3EFD717B11EF700B807F9 /* Bag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bag.h; path = Classes/Bag.h; sourceTree = "<group>"; };
+		95C3EFD817B11EF700B807F9 /* Bag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bag.m; path = Classes/Bag.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95C3EFC317B11DDC00B807F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C3EFCA17B11DDC00B807F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95C3EFBD17B11DDC00B807F9 = {
+			isa = PBXGroup;
+			children = (
+				95C3EFCB17B11DDC00B807F9 /* BallProblem */,
+				95C3EFC817B11DDC00B807F9 /* Frameworks */,
+				95C3EFC717B11DDC00B807F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95C3EFC717B11DDC00B807F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C3EFC617B11DDC00B807F9 /* BallProblem */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95C3EFC817B11DDC00B807F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95C3EFC917B11DDC00B807F9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95C3EFCB17B11DDC00B807F9 /* BallProblem */ = {
+			isa = PBXGroup;
+			children = (
+				95C3EFCC17B11DDC00B807F9 /* main.m */,
+				95C3EFD717B11EF700B807F9 /* Bag.h */,
+				95C3EFD817B11EF700B807F9 /* Bag.m */,
+				95C3EFD017B11DDC00B807F9 /* BallProblem.1 */,
+				95C3EFCE17B11DDC00B807F9 /* Supporting Files */,
+			);
+			path = BallProblem;
+			sourceTree = "<group>";
+		};
+		95C3EFCE17B11DDC00B807F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95C3EFCF17B11DDC00B807F9 /* BallProblem-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95C3EFC517B11DDC00B807F9 /* BallProblem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C3EFD417B11DDC00B807F9 /* Build configuration list for PBXNativeTarget "BallProblem" */;
+			buildPhases = (
+				95C3EFC217B11DDC00B807F9 /* Sources */,
+				95C3EFC317B11DDC00B807F9 /* Frameworks */,
+				95C3EFC417B11DDC00B807F9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BallProblem;
+			productName = BallProblem;
+			productReference = 95C3EFC617B11DDC00B807F9 /* BallProblem */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95C3EFBE17B11DDC00B807F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = safadmoh;
+			};
+			buildConfigurationList = 95C3EFC117B11DDC00B807F9 /* Build configuration list for PBXProject "BallProblem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 95C3EFBD17B11DDC00B807F9;
+			productRefGroup = 95C3EFC717B11DDC00B807F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95C3EFC517B11DDC00B807F9 /* BallProblem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95C3EFC217B11DDC00B807F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C3EFCD17B11DDC00B807F9 /* main.m in Sources */,
+				95C3EFD917B11EF700B807F9 /* Bag.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95C3EFD217B11DDC00B807F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		95C3EFD317B11DDC00B807F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		95C3EFD517B11DDC00B807F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BallProblem/BallProblem-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95C3EFD617B11DDC00B807F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BallProblem/BallProblem-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95C3EFC117B11DDC00B807F9 /* Build configuration list for PBXProject "BallProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C3EFD217B11DDC00B807F9 /* Debug */,
+				95C3EFD317B11DDC00B807F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C3EFD417B11DDC00B807F9 /* Build configuration list for PBXNativeTarget "BallProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C3EFD517B11DDC00B807F9 /* Debug */,
+				95C3EFD617B11DDC00B807F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95C3EFBE17B11DDC00B807F9 /* Project object */;
+}
