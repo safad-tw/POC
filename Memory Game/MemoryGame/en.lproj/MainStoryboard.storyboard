@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k1k-UH-sZA">
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="338" id="uya-r3-d8V"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kuU-Ys-7Q1">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="memoryGameCollectionViewCell" id="5O2-dx-uLf" customClass="BoardCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="yellow.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zYS-mF-Z6L">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="BJb-ur-M3i"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsu-sl-Hxe"/>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.66666666666666663" green="0.30206305418292329" blue="0.11976402593755009" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="zYS-mF-Z6L" firstAttribute="top" secondItem="5O2-dx-uLf" secondAttribute="top" type="default" id="05P-yM-t2i"/>
+                                            <constraint firstItem="zYS-mF-Z6L" firstAttribute="trailing" secondItem="5O2-dx-uLf" secondAttribute="trailing" type="default" id="513-WT-yGv"/>
+                                            <constraint firstItem="dsu-sl-Hxe" firstAttribute="trailing" secondItem="5O2-dx-uLf" secondAttribute="trailing" type="default" id="7yq-QR-ntW"/>
+                                            <constraint firstItem="dsu-sl-Hxe" firstAttribute="leading" secondItem="5O2-dx-uLf" secondAttribute="leading" type="default" id="FXX-4x-pje"/>
+                                            <constraint firstItem="zYS-mF-Z6L" firstAttribute="leading" secondItem="5O2-dx-uLf" secondAttribute="leading" type="default" id="W1z-Lf-9UI"/>
+                                            <constraint firstItem="dsu-sl-Hxe" firstAttribute="bottom" secondItem="5O2-dx-uLf" secondAttribute="bottom" type="default" id="d6b-Th-oyq"/>
+                                            <constraint firstItem="dsu-sl-Hxe" firstAttribute="top" secondItem="5O2-dx-uLf" secondAttribute="top" type="default" id="inj-g7-tJb"/>
+                                        </constraints>
+                                        <size key="customSize" width="70" height="70"/>
+                                        <connections>
+                                            <outlet property="boardCellImageView" destination="zYS-mF-Z6L" id="kA9-Sc-IId"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="vED-Kl-nrC"/>
+                                    <outlet property="delegate" destination="2" id="N7y-qY-qP2"/>
+                                </connections>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="top_curve.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fi8-Hm-ZyR"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="nav_bar_no_curve.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fuu-NY-MH1"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bottom_View.png" translatesAutoresizingMaskIntoConstraints="NO" id="eDT-FL-YNJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="eSL-jV-dsp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Memory Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S81-Mv-owY">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="4yj-uY-IJo"/>
+                                    <constraint firstAttribute="height" constant="21" id="T77-Ba-JM5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Number Of Clicks:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzh-5d-efI">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="HDK-Cp-EM2"/>
+                                    <constraint firstAttribute="width" constant="216" id="PTk-g7-Mqv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G54-KQ-bVa">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="5Ye-ns-gfh"/>
+                                    <constraint firstAttribute="height" constant="21" id="qNP-rY-0dJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tku-5h-eg0">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="Zp9-5M-ZS2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S81-Mv-owY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="6" id="0vI-um-IH5"/>
+                            <constraint firstItem="tku-5h-eg0" firstAttribute="top" secondItem="gzh-5d-efI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1ws-qk-0Cs"/>
+                            <constraint firstItem="Fuu-NY-MH1" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="2zv-GO-l0y"/>
+                            <constraint firstItem="eDT-FL-YNJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="3LT-iz-L89"/>
+                            <constraint firstItem="k1k-UH-sZA" firstAttribute="top" secondItem="3" secondAttribute="top" constant="40" id="3RD-oQ-dPE"/>
+                            <constraint firstItem="Fuu-NY-MH1" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="4bC-aq-S0e"/>
+                            <constraint firstItem="tku-5h-eg0" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="FQ6-vq-4E3"/>
+                            <constraint firstItem="gzh-5d-efI" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="17" id="KqP-ZB-2aN"/>
+                            <constraint firstAttribute="trailing" secondItem="G54-KQ-bVa" secondAttribute="trailing" constant="11" id="OdO-8B-K40"/>
+                            <constraint firstItem="Fi8-Hm-ZyR" firstAttribute="top" secondItem="3" secondAttribute="top" constant="21" id="QOB-ok-fYz"/>
+                            <constraint firstAttribute="bottom" secondItem="G54-KQ-bVa" secondAttribute="bottom" constant="51" id="evN-DM-N75"/>
+                            <constraint firstAttribute="trailing" secondItem="tku-5h-eg0" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ezq-ZU-LcS"/>
+                            <constraint firstItem="eDT-FL-YNJ" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="i3O-Ar-U5l"/>
+                            <constraint firstItem="k1k-UH-sZA" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="k9N-tH-af1"/>
+                            <constraint firstItem="k1k-UH-sZA" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="m2T-hr-bnv"/>
+                            <constraint firstItem="eDT-FL-YNJ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="376" id="mEk-iA-Jcb"/>
+                            <constraint firstItem="Fi8-Hm-ZyR" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="115" id="yDk-DH-HEH"/>
+                            <constraint firstItem="S81-Mv-owY" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="52" id="ype-FL-yxt"/>
+                            <constraint firstAttribute="bottom" secondItem="tku-5h-eg0" secondAttribute="bottom" constant="12" id="yrY-mg-yt0"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="clickCountLabel" destination="G54-KQ-bVa" id="nA5-AM-gPg"/>
+                        <outlet property="gameResultLabel" destination="tku-5h-eg0" id="0dS-uH-NrX"/>
+                        <outlet property="memoryGameBoard" destination="k1k-UH-sZA" id="pWJ-yT-rMe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bottom_View.png" width="281" height="59"/>
+        <image name="nav_bar_no_curve.png" width="320" height="40"/>
+        <image name="top_curve.png" width="88" height="31"/>
+        <image name="yellow.jpg" width="1280" height="1116"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
